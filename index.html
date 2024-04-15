@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <meta charset="UTF-8">
+     <title>Amanda Spears Travel Blog</title>
+</head>
+<div class="style">
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="placesivebeen.html"> Places I've Been </a>
+        <a href="dreamdestinations.html"> Dream Destinations </a>
+        <a href="gallery.html"> Gallery</a>
+    </div>
+
+     <section class="hero-container">
+         <div class="hero-image">
+           <div class="hero-text">
+             <h1>Amanda's Passport Pages
+                Travel Blog</h1>
+         <a href="https://www.google.com/maps/@34.4613153,17.9117569,3z?entry=ttu">
+            <button>Map</button>
+      </div>
+  </section>
+
+ <section class="option-1">
+    
+    <div class="option-container">
+        <h4>Check Out More Information On Cities Below!</h4>
+      <select id="select-city" class="city">
+        <option>Choose</option>
+        <option>Rome</option>
+        <option>Tokyo</option>
+        <option>Munich</option>
+        <option>Reykjavik</option>
+        <option>London</option>
+        <option>Cardiff</option>
+        <option>Kauai</option>
+        <option>Cancun</option>
+        <option>Conwy</option>
+        <option>Kansas City</option>
+      </select> 
+    </div>
+    <div name="divlabel" class="container">
+        <label>City:&nbsp;</label> <p id="lblCity"></p>
+        <label>Country:&nbsp;</label> <p id="lblCountry"></p>
+        <label>Timezone:&nbsp;</label> <p id="lblTimezone"></p>
+        <label>Population:&nbsp;</label> <p id="lblPopulation"></p>
+        </div>
+  </section>
+  
+ <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+  <footer>
+    <details>
+        <summary>Copyright</summary>
+        <p>© Copyright <span id="year"></span> by Amanda Spears SAIT Student. All rights reserved.</p>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </details>
+</footer>
+
+</div>
+</html>

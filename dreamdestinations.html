@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <meta charset="UTF-8">
+     <title>Amanda Spears Travel Blog</title>
+</head>
+<div class="style">
+    <body>
+        <div class="topnav">
+            <a href="index.html"> Home </a>
+            <a href="placesivebeen.html"> Places I've Been </a>
+            <a class="active" href="dreamdestinations.html">Dream Destinations</a>
+            <a href="gallery.html"> Gallery</a>
+        </div>
+    
+        <div class="google-font">
+            <h2>Dream Destinations</h2>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet">
+        </div>
+
+        <h3>Click on the location titles below to find why I have added these to my dream destinations list as well as embedded YouTube videos on the cities.</h3>
+
+<button class="accordion">Reykjavik, Iceland</button>
+<div class="panel">
+  <p>Iceland is one of the safest places for single travellers especially female travellers. On top of it being extremely safe for me to travel there alone I think Iceland is breathtaking. Reykjavik is the captiol of Iceland and I have done extensive research on it, there are around 200,000 people and as it is the largest city in Iceland it has many tourist attractions.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G4ectbFtqQk?si=DFwHgKkfbWAKHs7p" alt="15 best things to do in Reykjavik Iceland YouTube video"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    This is a video showing the 15 best things to do in Reykjavik, Iceland.
+  </p>
+</div>
+
+<button class="accordion">Tokyo, Japan</button>
+<div class="panel">
+  <p>For a long time I have dreamed of going to Japan, I focus on Tokyo as I am in love with big cities and I think I would be able to find many things to explore. Specifically I want to try REAL sushi as it is my favourite food. I have watched many YouTube videos as well touring Japan and follow influncers who live there I think it is a stunning city.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QcGmpWx4DXQ?si=yA9ZmDl0kZWC4wO-" alt="Tokyo Japan Tourism Video"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  This is a video showing how stunning Tokyo is.
+</p>
+</div>
+
+<button class="accordion">Rome, Italy</button>
+<div class="panel">
+  <p>My grandparents have travelled every year my entire life, when they went to Rome my grandmother brought me back a necklace and showed me pictures of their trip, I fell in love instantly. She told me how much I would enjoy it and after that it has been on my bucket list since I was seven.
+    Below is a video I found on YouTube showing Rome.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1g7TrcIlpMk?si=u8w-OrleQSOOMOHg" alt="Video of Rome, Italy"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </p>
+</div>
+
+<button class="accordion">Ålborg, Denmark</button>
+<div class="panel">
+  <p>I have family in Denmark and have after receving post cards and seeing photos I think it is a beautiful place. Ålborg specifically as that is where my family is.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nJW0ycSLTjo?si=DiAkpE6GI9gFBXNL" alt="Aalborg Demark YouTube Video"
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    This is a video showcasing some of the most popular things to do in Ålborg.
+</p>
+</div>
+
+<button class="accordion">Munich, Germany</button>
+<div class="panel">
+  <p>Munich is an amazing city for learning about World War II, as I am very interested in that topic I think visting Munich would be an amazing experience. On top of that I have friends who live in Germany and after seeing their photos and hearing their stories I am interested in seeing it for myself.
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/r2dXQrLwM1Q?si=uxLXhBPQlKhcAPZD" alt="Explore Munich Germany in this short YouTube video."
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+ Explore Munich Germany in this short YouTube video.
+</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<img src="images/plane.jpg" alt="View from an airplane window found on Unsplash" width="100%"></img>
+             
+        <footer>
+            <details>
+                <summary>Copyright</summary>
+                <p>© Copyright <span id="year"></span> by Amanda Spears SAIT Student. All rights reserved.</p>
+              <script>
+                document.getElementById("year").innerHTML = new Date().getFullYear();
+                </script>
+            </details>
+        </footer>
+
+    </div>
+    </body>
+    </html>
